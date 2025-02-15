@@ -20,9 +20,11 @@ NB some bacsic commands:
 ----- To describe all tables
  \d+ table_name 
 --To create a table
-CREATE TABLE children(
-    todo_id SERIAL PRIMARY KEY,
-    description VARCHAR(255)
+CREATE TABLE users(
+    users_id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255),
 );
 ---To show all the data in a table
 SELECT * FROM todo;
