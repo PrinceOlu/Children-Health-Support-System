@@ -1,4 +1,5 @@
-require('dotenv').config();
+require('dotenv').config();  
+const jwtSecret = process.env.JWT_SECRET;
 const express = require("express");
 const app = express();
 const cors = require("cors");
